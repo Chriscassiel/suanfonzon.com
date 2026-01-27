@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Comandos Básicos de PowerShell | Cheat Sheet</title>
+    <meta name="description"
+        content="Lista esencial de los comandos (cmdlets) más útiles de PowerShell. Aprende Get-Help, Get-Command, Get-Service y más para empezar a administrar tu equipo.">
+    <meta name="keywords"
+        content="Comandos PowerShell, Cmdlets básicos, PowerShell Cheat Sheet, Lista comandos Windows">
+    <meta name="author" content="Jesús Ninoc">
+    <link rel="canonical" href="https://www.jesusninoc.com/comandos-basicos.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Top 10 Comandos Básicos de PowerShell">
+    <meta property="og:description"
+        content="Domina la consola con estos 10 comandos esenciales que todo administrador debe conocer.">
+    <meta property="og:url" content="https://www.jesusninoc.com/comandos-basicos.html">
+    <meta property="og:image" content="https://www.jesusninoc.com/wp-content/uploads/2016/07/jesusninoc.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="index.html">Jesús Ninoc</a></h1>
+            <p class="tagline">Sistemas Operativos, Scripting y Seguridad</p>
+            <nav aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="intro-powershell.html">¿Qué es PowerShell?</a></li>
+                    <li><a href="comandos-basicos.html" class="active">Comandos Básicos</a></li>
+                    <li><a href="scripting-avanzado.html">Scripting Avanzado</a></li>
+                    <li><a href="https://www.jesusninoc.com/" target="_blank" rel="noopener">Blog Oficial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="tutorial-content">
+            <h1>Comandos Básicos de PowerShell</h1>
+            <p>En PowerShell, los comandos se llaman <em>cmdlets</em> y siguen una estructura verbo-sustantivo (ej.
+                <code>Get-Help</code>). Aquí tienes los fundamentales.
+            </p>
+
+            <h2>1. Get-Help</h2>
+            <p>El comando más importante. Te explica cómo usar cualquier otro comando.</p>
+            <pre><code>Get-Help Get-Service -Full</code></pre>
+
+            <h2>2. Get-Command</h2>
+            <p>¿No recuerdas el nombre de un comando? Búscalo.</p>
+            <pre><code>Get-Command *service*</code></pre>
+
+            <h2>3. Get-Service</h2>
+            <p>Lista todos los servicios del sistema y su estado.</p>
+            <pre><code>Get-Service</code></pre>
+
+            <h2>4. Get-Process</h2>
+            <p>Muestra los procesos que se están ejecutando actualmente.</p>
+            <pre><code>Get-Process</code></pre>
+
+            <h2>5. Get-Content</h2>
+            <p>Lee el contenido de un archivo de texto (similar a `cat` en Linux).</p>
+            <pre><code>Get-Content archivo.txt</code></pre>
+
+            <h2>Otros comandos útiles</h2>
+            <ul>
+                <li><strong>Set-Location (cd):</strong> Cambiar de directorio.</li>
+                <li><strong>Get-ChildItem (ls/dir):</strong> Listar archivos.</li>
+                <li><strong>Copy-Item (cp):</strong> Copiar archivos.</li>
+            </ul>
+
+            <div class="next-step-nav">
+                <a href="scripting-avanzado.html" class="btn btn-outline">Siguiente: Scripting Avanzado ></a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>¿Buscas más comandos? Visita la biblioteca completa en <a href="https://www.jesusninoc.com/"
+                    style="color: #fff; text-decoration: underline;">jesusninoc.com</a></p>
+            <p>&copy; 2024 Jesús Ninoc. Aprende, comparte y automatiza.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
